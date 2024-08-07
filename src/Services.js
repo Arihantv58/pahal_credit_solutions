@@ -3,7 +3,7 @@ import serviceapi from "./API/serviceApi.js";
 import { NavLink } from "react-router-dom";
 
 const Services = () => {
-    const [serviceData, setServiceData] = useState(serviceapi);
+    const [serviceData] = useState(serviceapi);
   return (
     <>
       <section className="service-main-container">

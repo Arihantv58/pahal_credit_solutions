@@ -4,9 +4,9 @@ import whyUs from "./API/WhyUs.js";
 import WhatDo from "./API/WhatDo.js";
 
 const Aboutus = () => {
-    const [aboutData, setAboutData] = useState(howToUseApp);
-    const [aboutData2, setAboutData2] = useState(whyUs);
-    const [aboutData3, setAboutData3] = useState(WhatDo);
+    const [aboutData] = useState(howToUseApp);
+    const [aboutData2] = useState(whyUs);
+    const [aboutData3] = useState(WhatDo);
   return (
     <>
       <section className="common-section our-services">

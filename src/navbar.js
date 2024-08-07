@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
   <img style={{borderRadius: 60}} src="./images/logo.jpg" alt="Girl in a jacket" width="60" height="60"/>
-    <a className="navbar-brand" href="#">Pahal Credit Solution</a>
+    <a className="navbar-brand" href="/">Pahal Credit Solution</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
     onClick={() => setShow(!show)}>
       <span className="navbar-toggler-icon"></span>
