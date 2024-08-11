@@ -44,8 +44,8 @@ const Footer = () => {
                   <h3 style={{color:'white'}} >H.no.-1207, Tower-9</h3>
                   <h3 style={{color:'white'}} >Aagman Society</h3>
                   <h3 style={{color:'white'}} >Sector 70, Faridabad, Haryana 121004</h3>
-                  <a href='http://pcsservices.co'>
-                  <h3 style={{color:'white'}} >http://pcsservices.com</h3>
+                  <a href='https://pcsservices.co/'>
+                  <h3 style={{color:'white'}} >https://pcsservices.co</h3>
                   </a>
                   <h3 style={{color:'white'}} >Phone</h3>
                   <ul>
