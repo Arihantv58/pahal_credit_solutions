@@ -1,4 +1,4 @@
-# Pahal Credit Solutions - Portfolio Website
+# Pahal Credit Solutions
 
 This repository contains the source code for **Pahal Credit Solutions**, a company portfolio website built using the **React.js** framework and **Firebase** for real-time database integration. The website showcases the company’s services, provides an About page, a Contact form with reCAPTCHA integration, and other essential features.
 
