@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Pahal Credit Solutions - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code for **Pahal Credit Solutions**, a company portfolio website built using the **React.js** framework and **Firebase** for real-time database integration. The website showcases the company’s services, provides an About page, a Contact form with reCAPTCHA integration, and other essential features.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Single Page Application** using React Router for seamless navigation.
+- **Contact Form** with data submission to Firebase and Google reCAPTCHA verification for spam prevention.
+- **Responsive Design** with modern CSS styling for various screen sizes.
+- **Firebase Integration** for real-time database storage.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, CSS, HTML, Javascript
+- **Backend**: Firebase Realtime Database
+- **Others**: Google reCAPTCHA
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Directory Structure
 
-### `npm test`
+```
+.
+├── App.js          # Main app component with route definitions
+├── App.css         # Global styling for the app
+├── Pages/          # Components for individual pages
+│   ├── About.js    # About page component
+│   ├── Contact.js  # Contact page component with Firebase integration
+│   ├── FAQs.js     # FAQs page component
+│   ├── Service.js  # Services page component
+│   └── Error.js    # Error handling page
+├── images/         # Static assets for the website
+└── firebase.json   # Firebase configuration (not included here)
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Arihantv58/pahal_credit_solutions.git
+   cd pahal-credit-solutions
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Firebase Setup
 
-### `npm run eject`
+1. Set up a Firebase project and create a Realtime Database.
+2. Replace the Firebase database URL in the `Contact.js` file with your project’s database URL:
+   ```javascript
+   const res = fetch(
+     "https://your-database-url.firebaseio.com/userDataRecords.json",
+     { ... }
+   );
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Configure reCAPTCHA:
+   - Replace the site key in the `Contact.js` file:
+     ```javascript
+     <ReCAPTCHA sitekey="your-site-key" onChange={onTap} />
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Navigate to the home page to explore the website.
+- Fill out the contact form to submit your details (with Firebase integration).
+- Use the navigation bar to access other pages like About, Services, and FAQs.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
